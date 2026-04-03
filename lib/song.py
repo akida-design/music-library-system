@@ -38,7 +38,7 @@ class Song:
             cls.genre_count[genre] += 1
 
     @classmethod
-    def add_artists_count(cls, artist):
+    def update_artists_count(cls, artist):
         if artist not in cls.artists_count:
             cls.artists_count[artist] = 1
         else:
